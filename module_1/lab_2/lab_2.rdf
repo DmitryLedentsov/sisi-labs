@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasChief -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasChief">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasCommander"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isChief"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasCommander -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasCommander">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#related"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isCommander"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment>имеет начальника</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasEnemy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasEnemy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasMember">
+        <owl:equivalentProperty>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isMember"/>
+            </rdf:Description>
+        </owl:equivalentProperty>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasServant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasServant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasSubordinative"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isServant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasSubordinative -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasSubordinative">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#related"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isSubordinate"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isChief -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isChief">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isCommander"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isCommander -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isCommander">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#related"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isMember">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#family"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isServant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isServant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isSubordinate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isSubordinate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#isSubordinate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#related"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#related -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#related">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member"/>
+        <rdfs:comment>Имеет связь</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#assosiate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#assosiate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#boss"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#capo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#consigliere"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#soldier"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#underboss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#boss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#boss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#capo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#consigliere"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#soldier"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#underboss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#capo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#capo">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasChief"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#underboss"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#consigliere"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#soldier"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#underboss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#consigliere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#consigliere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#soldier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#family -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#family">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member"/>
+        <rdfs:comment>name</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#member">
+        <rdfs:comment>name</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#soldier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#soldier">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasChief"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#capo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#underboss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#underboss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#underboss">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#hasChief"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#boss"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Andy_Turetto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Andy_Turetto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Big_Buff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Big_Buff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Ennio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Ennio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#boss"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Frank_Colletti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Frank_Colletti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#consigliere"/>
+        <untitled-ontology-3:hasChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Ennio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Georgi_Marcano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Georgi_Marcano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Luo_Marcano"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Olivia_Marcano"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Jimmy_Cavar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Jimmy_Cavar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Lucas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Lucas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Luigi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Luigi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Luo_Marcano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Luo_Marcano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Jimmy_Cavar"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Tony_Derazio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Marcano_Family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Marcano_Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#family"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Andy_Turetto"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Georgi_Marcano"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Jimmy_Cavar"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Luo_Marcano"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Nino_Santagelo"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Olivia_Marcano"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Pete_Santini"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Sal_Marcano"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Tony_Derazio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Nino_Santagelo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Nino_Santagelo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#consigliere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Olivia_Marcano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Olivia_Marcano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Andy_Turetto"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Pete_Santini"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Paulle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Paulle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <untitled-ontology-3:hasChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Sam"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Lucas"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Salvatore"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Pete_Santini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Pete_Santini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Ralph -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Ralph">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Sal_Marcano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Sal_Marcano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#boss"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Georgi_Marcano"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Nino_Santagelo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Saliery_Family -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Saliery_Family">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#family"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Big_Buff"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Ennio"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Frank_Colletti"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Lucas"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Luigi"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Paulle"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Salvatore"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Sam"/>
+        <untitled-ontology-3:hasMember rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Tommy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Salvatore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Salvatore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Sam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Sam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <untitled-ontology-3:hasChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Ennio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Tommy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Tommy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+        <untitled-ontology-3:hasChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Sam"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Big_Buff"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Luigi"/>
+        <untitled-ontology-3:isChief rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Ralph"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Tony_Derazio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#Tony_Derazio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/leden/ontologies/2023/8/untitled-ontology-3#gangster"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
